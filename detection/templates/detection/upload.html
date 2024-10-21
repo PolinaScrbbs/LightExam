@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Экзамен</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>Загрузите фото или видео</h1>
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="file-input">
+                <input type="file" id="file" name="file" required onchange="this.nextElementSibling.setAttribute('data-file-name', this.files[0].name)">
+                <label for="file" data-file-name="">Выбрать файл</label>
+            </div>
+            <button type="submit">Найти людей</button>
+        </form>
+    </div>
+    
+</body>
+</html>

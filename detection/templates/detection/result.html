@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Результат</h1>
+    {% if is_video %}
+        <img src="{{ output_image }}" alt="Detection Result" style="max-width: 100%; height: auto;">
+    {% else %}
+        <img src="{{ output_image }}" alt="Detection Result" style="max-width: 100%; height: auto;">
+    {% endif %}
+    <br>
+    <div class="upload_btn">
+        <a class="btn" href="{% url 'upload' %}">Загрузить новый файл</a>
+    </div>
+</body>
+</html>
