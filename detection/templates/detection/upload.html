@@ -12,10 +12,11 @@
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="file-input">
-                <input type="file" id="file" name="file" required onchange="this.nextElementSibling.setAttribute('data-file-name', this.files[0].name)">
+                <input type="file" id="file" name="file" accept="image/jpeg, image/png, video/mp4, video/avi, video/mov" required onchange="this.nextElementSibling.setAttribute('data-file-name', this.files[0].name)">
                 <label for="file" data-file-name="">Выбрать файл</label>
             </div>
             <button type="submit">Найти людей</button>
+            <div id="error-message" style="color: red;"></div>
         </form>
     </div>
     
