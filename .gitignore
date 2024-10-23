@@ -1,5 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/django,venv,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=django,venv,python
+# Created by https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode,opencv,database,venv,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,django,visualstudiocode,opencv,database,venv,dotenv
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+*.db-shm
+*.db-wal
 
 ### Django ###
 *.log
@@ -171,6 +181,17 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+### dotenv ###
+
+### OpenCV ###
+#OpenCV for Mac and Linux
+#build and release folders
+*/CMakeFiles
+*/CMakeCache.txt
+*/Makefile
+*/cmake_install.cmake
+.DS_Store
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 
@@ -275,4 +296,23 @@ pyrightconfig.json
 pyvenv.cfg
 pip-selfcheck.json
 
-# End of https://www.toptal.com/developers/gitignore/api/django,venv,python
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode,opencv,database,venv,dotenv
