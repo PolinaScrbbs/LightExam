@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+{% block title %}Main Page{% endblock %}
+{% block content %}
+<main class="px-3">
+    <h1 class="main__title">Voice Converter</h1>
+    <p class="lead main__description">Our cutting-edge text-to-speech converter provides a seamless experience for transforming your written content into clear, natural-sounding audio. Whether you're working on presentations, audiobooks, or just need a quick voiceover, our service supports a variety of languages and voices. With high-quality output and fast processing, you'll be able to convert text to voice effortlessly. Try it today and bring your words to life!</p>
+    <p class="lead">
+        <a href="{{ url_for('converter.converter_page') }}" class="btn btn-lg btn-light fw-bold border-white bg-white">Start</a>
+    </p>
+</main>
+{% endblock %}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/OpenSans/OpenSans_Condensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/RobotoMono/RobotoMono-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/RobotoMono/RobotoMono-Light.ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/RobotoMono/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/RobotoMono/RobotoMono-Medium.ttf');
+}
+

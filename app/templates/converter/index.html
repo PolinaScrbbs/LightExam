@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Converter{% endblock %}
+{% block content %}
+<main>
+    <h1 class="converter__main__title text-start mb-4">Text to Img Converter</h1>
+    
+    <form action="/converter" method="post">
+        <div class="form-floating mb-4">
+            <textarea class="form-control" placeholder="Leave a comment here" id="VoiceArea" name="text" style="height: 300px"></textarea>
+            <label for="VoiceArea">Text for voice-over</label>
+        </div>
+
+        <p class="lead">
+            <button type="submit" class="btn btn-lg btn-light fw-bold border-white bg-white">Convert</button>
+        </p>
+    </form>
+</main>
+{% endblock %}
